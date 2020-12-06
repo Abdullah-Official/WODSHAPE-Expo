@@ -50,7 +50,7 @@ const Welcome = (props) => {
   return (
     
     <>
-      <View style={{flex:1, backgroundColor:'white'}}>
+      <View style={{flex:1, backgroundColor:'#F8F9F9'}}>
       <HeaderApp btnName='Skip'/>
       </View>
       <View style={{flex: 9}}>
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     // justifyContent: 'center',
-    backgroundColor:'white',
+    backgroundColor:'#F8F9F9',
     paddingTop:70
   },
   nxtBtn : {
@@ -102,6 +102,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontWeight: 'bold',
     marginHorizontal: 40,
+    
   },
   text: {
     fontSize: 14,
@@ -145,6 +146,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     borderRadius: 25,
     marginRight: -40,
+    fontFamily:""
   },
   doneButtonText: {
     fontSize: 14,

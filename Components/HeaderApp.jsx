@@ -1,24 +1,26 @@
 import React from 'react'
-import { Container, Header, Left, Right, Button, Icon, Text } from 'native-base';
+import { Container, Header, Left, Right, Button, Icon, } from 'native-base';
 import {StyleSheet} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import {Text} from 'react-native'
 
 
 
 export default HeaderApp = (props) => {
 
+
   const navigation = useNavigation()
   return (
       <>
         <Container>
-          <Header style={{marginTop: 20, padding:10 ,backgroundColor: '#F8F9F9'}}>
+          <Header style={{flex:1,marginTop: 23, justifyContent:'center', alignItems:'center', padding:32 ,backgroundColor: '#F8F9F9'}}>
             <Left>
-              <Button transparent>
+              <Button onPress={() => navigation.goBack()} transparent>
                 <Icon name="arrow-back" style={{color:'black'}} />
               </Button>
             </Left>
             <Right>
-              <Button onPress={()=>navigation.navigate("Information")} bordered light style={styles.skipBtn}>
+              <Button onPress={()=>navigation.navigate("Information")} bordered  style={styles.skipBtn}>
                   <Text style={styles.text}>{props.btnName}</Text>
               </Button>
             </Right>
@@ -34,8 +36,11 @@ text:{
   fontSize: 12,
 },
 skipBtn :{
-  borderColor: 'lightgray',
+  borderColor: '#F8F9F9',
   height: 32,
-  borderRadius: 100
+  borderRadius: 100,
+  width: 90  ,
+  justifyContent: 'center',
+  alignItems: 'center',
 }
 })

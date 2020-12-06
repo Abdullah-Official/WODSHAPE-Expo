@@ -1,7 +1,7 @@
 import { DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer';
 import { Drawer } from 'native-base';
 import React from 'react';
-import { StyleSheet, Text, View, Button, Image, ImageBackground} from 'react-native';
+import { StyleSheet, ImageBackground} from 'react-native';
 
 
 
