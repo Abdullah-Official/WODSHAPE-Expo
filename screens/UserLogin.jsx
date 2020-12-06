@@ -1,11 +1,15 @@
+import { useNavigation } from '@react-navigation/native';
 import { Form, View } from 'native-base';
 import React, { useState } from 'react'
 import { Image, StyleSheet, Text , TextInput, TouchableOpacity} from 'react-native'
 import HeaderApp from '../Components/HeaderApp';
+import { PrimaryColor } from '../Constants/Colors/Color';
 
 export default UserLogin = () => {
   const [userName, setUserName] = useState();
   const [password, setPassword] = useState();
+
+  const navigation = useNavigation()
     return (
       <>
         <View style={{ flex: 1, backgroundColor: "#fff", marginTop: 10 }}>
@@ -20,7 +24,7 @@ export default UserLogin = () => {
             </Form>
             <Text style={styles.forgot}>Forgot Password?</Text>
             <View style={styles.rightTextWrapper}>
-        <TouchableOpacity activeOpacity={0.9} style={styles.nxtBtn}>
+        <TouchableOpacity onPress={() => navigation.navigate("Main")} activeOpacity={0.9} style={styles.nxtBtn}>
           <Text style={styles.rightText}>LOGIN</Text>
         </TouchableOpacity>
       </View>
@@ -80,7 +84,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
   },
   nxtBtn: {
-    backgroundColor: "#32C553",
+    backgroundColor: PrimaryColor,
     padding: 15,
     width: 293,
     justifyContent: "center",

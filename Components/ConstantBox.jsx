@@ -2,6 +2,7 @@ import React from 'react'
 import { TouchableOpacity, Text, StyleSheet, View } from 'react-native'
 
 export default ConstantBox = (props) => {
+  
     return (
       <>
         <View style={styles.mainBox}>
@@ -16,7 +17,7 @@ export default ConstantBox = (props) => {
 
 const styles = StyleSheet.create({
     mainBox : {
-        marginVertical: 8,
+        marginVertical: 6,
         justifyContent: 'center',
         alignItems: 'center',
     },
@@ -27,10 +28,11 @@ const styles = StyleSheet.create({
         height: 35,
         justifyContent: 'center',
         alignItems: 'center',
-        paddingVertical: 37
+        paddingVertical: 35
     },
     titleBox : {
-        fontSize: 14,
+        fontSize: 13.6,
         fontWeight : 'bold',
+        color: '#000'
     }
 });

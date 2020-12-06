@@ -3,7 +3,8 @@ import {View, Text, StyleSheet, StatusBar, Image} from 'react-native';
 import HeaderApp from '../Components/HeaderApp'
 import AppIntroSlider from 'react-native-app-intro-slider';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import { welcomeData } from '../Datas/WelcomeData';
+import { welcomeData } from '../Constants/Datas/WelcomeData';
+import { PrimaryColor } from '../Constants/Colors/Color';
 
 
 
@@ -82,7 +83,7 @@ const styles = StyleSheet.create({
     paddingTop:70
   },
   nxtBtn : {
-    backgroundColor: '#32C553',
+    backgroundColor: PrimaryColor,
     padding: 12,
     width: 150,
     justifyContent:'center',
@@ -98,7 +99,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 24,
-    color: '#32C553',
+    color: PrimaryColor,
     textAlign: 'center',
     fontWeight: 'bold',
     marginHorizontal: 40,
@@ -115,7 +116,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#cccc',
   },
   activeDotStyle: {
-    backgroundColor: '#32C553',
+    backgroundColor: PrimaryColor,
   },
   rightTextWrapper: {
     // marginRight:30,

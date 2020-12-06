@@ -8,6 +8,7 @@ import SideMenu from './Components/SideMenu';
 import Information from './screens/Information';
 import Goal from './screens/Goal';
 import UserLogin from './screens/UserLogin';
+import Main from './screens/Main';
 
 export default function App() {
   
@@ -20,6 +21,7 @@ const Drawer = createDrawerNavigator();
         <Drawer.Screen name="Information" component={Information} />
         <Drawer.Screen name="Goal" component={Goal} />
         <Drawer.Screen name="UserLogin" component={UserLogin} />
+        <Drawer.Screen name="Main" component={Main} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

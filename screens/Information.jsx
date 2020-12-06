@@ -10,8 +10,9 @@ import HeaderApp from "../Components/HeaderApp";
 import AppIntroSlider from "react-native-app-intro-slider";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { Form } from "native-base";
-import { InfoData } from "../Datas/InfoData";
+import { InfoData } from "../Constants/Datas/InfoData";
 import { useNavigation } from "@react-navigation/native";
+import { PrimaryColor } from "../Constants/Colors/Color";
 
 
 const Information = () => {
@@ -113,7 +114,7 @@ const styles = StyleSheet.create({
     // backgroundColor: "#F8F9F9",
   },
   nxtBtn: {
-    backgroundColor: "#32C553",
+    backgroundColor: PrimaryColor,
     padding: 12,
     width: 280,
     justifyContent: "center",
@@ -128,7 +129,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#cccc",
   },
   activeDotStyle: {
-    backgroundColor: "#32C553",
+    backgroundColor: PrimaryColor,
   },
   rightTextWrapper: {
     // marginRight:30,
@@ -141,7 +142,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   doneButtonWrapper: {
-    backgroundColor: "#32C553",
+    backgroundColor: PrimaryColor,
     marginVertical: 40,
     borderRadius: 100,
   },
