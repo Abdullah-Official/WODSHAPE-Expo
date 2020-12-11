@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet, StatusBar, Image} from 'react-native';
-import HeaderApp from '../Components/HeaderApp'
+import HeaderApp from '../Components/HeaderApp/HeaderApp'
 import AppIntroSlider from 'react-native-app-intro-slider';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { welcomeData } from '../Constants/Datas/WelcomeData';

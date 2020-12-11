@@ -1,8 +1,8 @@
 import { useNavigation } from '@react-navigation/native';
 import { Form, View } from 'native-base';
 import React, { useState } from 'react'
-import { Image, StyleSheet, Text , TextInput, TouchableOpacity} from 'react-native'
-import HeaderApp from '../Components/HeaderApp';
+import { Image, ScrollView, StyleSheet, Text , TextInput, TouchableOpacity} from 'react-native'
+import HeaderApp from '../Components/HeaderApp/HeaderApp';
 import { PrimaryColor } from '../Constants/Colors/Color';
 
 export default UserLogin = () => {
@@ -12,15 +12,16 @@ export default UserLogin = () => {
   const navigation = useNavigation()
     return (
       <>
-        <View style={{ flex: 1, backgroundColor: "#fff", marginTop: 10 }}>
-          <HeaderApp />
+        <View style={{ flex: 1, backgroundColor: "#fff",marginTop:10 }}>
+         <ScrollView>
+         <View style={{flex:1,marginBottom:-540}}><HeaderApp/></View>
           <View style={styles.mainLogin}>
           <Image style={styles.logo} source={require('../assets/login.png')}/>
           <View style={styles.form}>
             <Text style={styles.textLogin}>Please Login</Text>
             <Form>
                 <TextInput value={userName} onChangeText={(e) => setUserName(e)} style={styles.input} placeholder="Username"/>
-                <TextInput value={password} onChangeText={(e) => setPassword(e)} style={styles.input} placeholder="Password"/>
+                <TextInput secureTextEntry={true} value={password} onChangeText={(e) => setPassword(e)} style={styles.input} placeholder="Password"/>
             </Form>
             <Text style={styles.forgot}>Forgot Password?</Text>
             <View style={styles.rightTextWrapper}>
@@ -31,6 +32,7 @@ export default UserLogin = () => {
             </View>
           
           </View>
+         </ScrollView>
        
         </View>
       
@@ -42,18 +44,19 @@ export default UserLogin = () => {
 const styles = StyleSheet.create({
 
   mainLogin :{
-      marginBottom: 510,
-      justifyContent: 'center',
+      // marginBottom: 120,
+      // justifyContent: 'center',
       alignItems: 'center',
+      flex: 9
   },
   logo :{
     width: 200,
     height: 150,
     resizeMode: 'contain',
-    marginTop: 470,
+    // marginTop: 470,
   },
   form :{
-      marginBottom: 320,
+      // marginBottom: 320,
   },
   input: {
     borderColor: "#ccc",

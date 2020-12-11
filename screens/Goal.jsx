@@ -2,8 +2,8 @@ import { useNavigation } from '@react-navigation/native'
 import { View } from 'native-base'
 import React from 'react'
 import { StyleSheet, Text , TouchableOpacity} from 'react-native'
-import ConstantBox from '../Components/ConstantBox'
-import HeaderApp from '../Components/HeaderApp'
+import ConstantBox from '../Components/ConstantBox/ConstantBox'
+import HeaderApp from '../Components/HeaderApp/HeaderApp'
 import { PrimaryColor } from '../Constants/Colors/Color'
 
 export default Goal = () => {

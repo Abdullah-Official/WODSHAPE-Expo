@@ -6,13 +6,13 @@ import {
   StatusBar,
   TextInput,
 } from "react-native";
-import HeaderApp from "../Components/HeaderApp";
+import HeaderApp from "../Components/HeaderApp/HeaderApp";
 import AppIntroSlider from "react-native-app-intro-slider";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { Form } from "native-base";
 import { InfoData } from "../Constants/Datas/InfoData";
 import { useNavigation } from "@react-navigation/native";
-import { PrimaryColor } from "../Constants/Colors/Color";
+import { PrimaryColor } from '../Constants/Colors/Color';
 
 
 const Information = () => {
