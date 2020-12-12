@@ -5,6 +5,7 @@ import AppIntroSlider from 'react-native-app-intro-slider';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { welcomeData } from '../Constants/Datas/WelcomeData';
 import { PrimaryColor } from '../Constants/Colors/Color';
+import SvgUri from 'expo-svg-uri';
 
 
 
@@ -18,7 +19,11 @@ const Welcome = (props) => {
           <Text style={styles.title}>{item.title}</Text>
           <Text style={styles.text}>{item.text}</Text>
         </View>
-        <Image source={item.image} style={styles.image} />
+        <SvgUri
+      width="300"
+      height="350"
+      source={item.image}
+    />
       </View>
     );
   };

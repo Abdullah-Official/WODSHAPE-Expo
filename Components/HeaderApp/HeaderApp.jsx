@@ -3,7 +3,7 @@ import { Container, Header, Left, Right, Button, Icon, } from 'native-base';
 import {StyleSheet} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import {Text} from 'react-native'
-
+import { MaterialIcons } from '@expo/vector-icons';
 
 
 export default HeaderApp = (props) => {
@@ -17,7 +17,7 @@ export default HeaderApp = (props) => {
           <Header style={{flex:1,marginTop: 23, justifyContent:'center', alignItems:'center', padding:32 ,backgroundColor: '#F8F9F9'}}>
             <Left>
               <Button onPress={() => navigation.goBack()} transparent>
-                <Icon name="arrow-back" style={{color:'black'}} />
+              <MaterialIcons name="arrow-back-ios" size={24} color="black" />
               </Button>
             </Left>
             <Right>

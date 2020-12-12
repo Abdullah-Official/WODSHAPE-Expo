@@ -4,7 +4,7 @@ import {  StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-nati
 import { useNavigation } from '@react-navigation/native';
 import { Icon } from 'native-base';
 import { PrimaryColor } from '../../Constants/Colors/Color';
-
+import { Feather } from '@expo/vector-icons';
 export default HeaderMain = (props) => {
     const navigation = useNavigation()
 
@@ -15,7 +15,7 @@ export default HeaderMain = (props) => {
         <Appbar.Header style={styles.mainHeader}>
       <View>
       <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.openDrawer()}>
-      <Icon name={props.icon} style={styles.menuIcon} />
+      <Feather name="align-left" size={32} color="#fff" />
       </TouchableOpacity>
       </View>
       <View>

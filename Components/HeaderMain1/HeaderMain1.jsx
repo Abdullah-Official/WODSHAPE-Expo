@@ -4,6 +4,7 @@ import {  StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-nati
 import { useNavigation } from '@react-navigation/native';
 import { Icon } from 'native-base';
 import { PrimaryColor } from '../../Constants/Colors/Color';
+import { MaterialIcons } from '@expo/vector-icons';
 
 export default HeaderMain1 = () => {
     const navigation = useNavigation()
@@ -15,7 +16,7 @@ export default HeaderMain1 = () => {
         <Appbar.Header style={styles.mainHeader}>
       <View>
       <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.goBack()}>
-      <Icon name='arrow-back' style={styles.menuIcon} />
+      <MaterialIcons style={{marginLeft: 5}} name="arrow-back-ios" size={24} color="#fff" />
       </TouchableOpacity>
       </View>
       <View>
@@ -45,7 +46,7 @@ const styles = StyleSheet.create({
         alignItems:'center',
         color:'#fff',
         fontWeight: 'bold',
-        fontSize: 18
+        fontSize: 16
     },
     menuIcon : {
         padding: 8,
