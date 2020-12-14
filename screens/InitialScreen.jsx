@@ -12,7 +12,7 @@ const InitialScreen = () => {
     return (
         <>
              <View style={{flex: 1}}>
-        <View style={{flex: 1}} ><HeaderMain  icon="menu" title="WODSHAPE" iconRight='search' /></View>
+        <View style={{flex: 1}} ><HeaderMain  icon="align-left" title="WODSHAPE" iconRight='search' /></View>
         <View style={styles.banner} >
         <Image style={styles.bannerImg} source={require('../assets/banner-initial.png')} />
         <View>

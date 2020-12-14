@@ -15,7 +15,7 @@ export default HeaderMain = (props) => {
         <Appbar.Header style={styles.mainHeader}>
       <View>
       <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.openDrawer()}>
-      <Feather name="align-left" size={32} color="#fff" />
+      <Feather name={props.icon} size={32} color="#fff" />
       </TouchableOpacity>
       </View>
       <View>

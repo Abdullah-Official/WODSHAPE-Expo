@@ -49,7 +49,7 @@ export default function SideMenu({navigation}) {
             />
             <Text style={styles.drawerText}>My Profile</Text>
           </TouchableOpacity>
-          <TouchableOpacity  style={styles.drawerOptions} activeOpacity={0.7}>
+          <TouchableOpacity  onPress={() => navigation.navigate("InitialScreen")} style={styles.drawerOptions} activeOpacity={0.7}>
           <SvgUri 
             width= "21"
             height="21"

@@ -12,6 +12,7 @@ import UserLogin from './screens/UserLogin';
 import Main from './screens/Main';
 import InitialScreen from './screens/InitialScreen';
 import RunningScreen from './screens/RunningScreen';
+import SearchProfessional from './screens/SearchProfessional';
 
 
 
@@ -30,6 +31,7 @@ const Drawer = createDrawerNavigator();
         <Drawer.Screen name="Main" component={Main} />
         <Drawer.Screen name="InitialScreen" component={InitialScreen} />
         <Drawer.Screen name="RunningScreen" component={RunningScreen} />
+        <Drawer.Screen name="SearchProfessional" component={SearchProfessional} />
       </Drawer.Navigator>
       
     </NavigationContainer>
