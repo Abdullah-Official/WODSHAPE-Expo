@@ -6,7 +6,7 @@ import { Icon } from 'native-base';
 import { PrimaryColor } from '../../Constants/Colors/Color';
 import { MaterialIcons } from '@expo/vector-icons';
 
-export default HeaderMain1 = () => {
+export default HeaderMain1 = (props) => {
     const navigation = useNavigation()
 
 
@@ -20,7 +20,7 @@ export default HeaderMain1 = () => {
       </TouchableOpacity>
       </View>
       <View>
-          <Text style={styles.titleHeader}>START RUNNING</Text>
+          <Text style={styles.titleHeader}>{props.title}</Text>
       </View>
       <View>
       <TouchableOpacity activeOpacity={0.8}>

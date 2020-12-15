@@ -15,7 +15,7 @@ const RunningScreen = () => {
     style={{
       width: 830,
       height: 330,
-      marginTop: -20,
+      marginTop: -25,
       resizeMode: "contain",
     }}
     source={require("../assets/rungif.png")}
@@ -29,6 +29,7 @@ const RunningScreen = () => {
         <View style={{ flex: 1 }}>
           <View style={{ flex: 1 }}>
             <HeaderMain1
+            title="START RUNNING"
             />
           </View>
           <View style={{ flex: 11 }}>
@@ -167,7 +168,7 @@ export default RunningScreen
 const styles = StyleSheet.create({
 timer : {
     width: '100%',
-    height:'35%',
+    height:'32%',
     marginTop: 30,
     backgroundColor: '#edeeef',
 },
@@ -227,9 +228,11 @@ runText : {
     paddingVertical: 15,
     textAlign: 'center',
     fontSize: 12,
-    fontWeight:'bold'
+    fontWeight:'bold',
 },
-
+runningScreen:{
+  height: '100%'
+}
 
 });
 const options = {

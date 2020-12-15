@@ -10,7 +10,7 @@ export default Main = () => {
         <>
             <View style={styles.main}>
                 <View style={styles.header}>
-                    <HeaderMain  icon="menu" iconRight="search" title="WODSHAPE"/>
+                    <HeaderMain  icon="align-left" iconRight="search" title="WODSHAPE"/>
                 </View>
                 <View style={styles.banner} >
                     <Image style={styles.bannerImg} source={require('../assets/main-banner.png')} />

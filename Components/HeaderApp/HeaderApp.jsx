@@ -40,7 +40,7 @@ skipBtn :{
   borderColor: '#F8F9F9',
   height: 32,
   borderRadius: 100,
-  width: 90  ,
+  width: 80  ,
   justifyContent: 'center',
   alignItems: 'center',
 }
