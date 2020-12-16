@@ -14,6 +14,7 @@ import InitialScreen from './screens/InitialScreen';
 import RunningScreen from './screens/RunningScreen';
 import SearchProfessional from './screens/SearchProfessional';
 import ChooseProfessional from './screens/ChooseProfessional';
+import PremiumSubscription from './screens/PremiumSubscription';
 
 
 
@@ -34,6 +35,7 @@ const Drawer = createDrawerNavigator();
         <Drawer.Screen name="RunningScreen" component={RunningScreen} />
         <Drawer.Screen name="SearchProfessional" component={SearchProfessional} />
         <Drawer.Screen name="ChooseProfessional" component={ChooseProfessional} />
+        <Drawer.Screen name="PremiumSubscription" component={PremiumSubscription} />
       </Drawer.Navigator>
       
     </NavigationContainer>

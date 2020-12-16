@@ -14,10 +14,11 @@ const ChooseProfessional = () => {
     return (
       <>
         <View style={{ flex: 1 }}>
-          <ScrollView>
+          
             <View style={{ flex: 0 }}>
               <HeaderMain1 title="Choose Professionals" />
             </View>
+            <ScrollView>
             <View
               style={{
                 flex: 1,

@@ -84,7 +84,7 @@ export default function SideMenu({navigation}) {
           </View>
           <View  ><TouchableOpacity activeOpacity={0.7}><Text  style={styles.stateTxt}>Eng</Text></TouchableOpacity></View>
           </TouchableOpacity>
-          <TouchableOpacity  style={styles.drawerOptions} activeOpacity={0.7}>
+          <TouchableOpacity  onPress={() => navigation.navigate("PremiumSubscription")} style={styles.drawerOptions} activeOpacity={0.7}>
           <SvgUri 
             width= "23"
             height="21"
